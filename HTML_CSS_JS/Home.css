@@ -3,6 +3,7 @@ h1.welcome{
     color: aliceblue;
     font-family:'Gill Sans', Calibri;
     margin-bottom: 10px;
+    text-align: center;
 }
 
 a.navigationButtons{
@@ -10,13 +11,14 @@ a.navigationButtons{
     color: aliceblue;
     font-size: xx-large;
     border-style: solid;
-    border-radius: 5px 5px 5px 5px;
+    border-radius: 5px;
     border-color: cornflowerblue;
     text-decoration: none;
     margin-left: 10px;
     height: 40px;
     width: 25%;
     font-family:'Lucida Grande', sans-serif;
+    text-align: center;
 }
 
 @media only screen and (max-width:700px){
@@ -25,7 +27,7 @@ a.navigationButtons{
         color: aliceblue;
         font-size: xx-large;
         border-style: solid;
-        border-radius: 5px 5px 5px 5px;
+        border-radius: 5px;
         border-color: cornflowerblue;
         text-decoration: none;
         margin-left: 10px;
@@ -33,13 +35,13 @@ a.navigationButtons{
         width: 95%;
         font-family:'Lucida Grande', sans-serif;
         margin-bottom: 10px;
+        text-align: center;
     }
 }
 
 div.flex-container{
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
 }
 
 @media only screen and (max-width:700px){
@@ -54,4 +56,19 @@ p.info{
     color: darkgreen;
     font-family: 'Gill Sans', monospace;
     margin-left: 5px;
+}
+
+p.about-us{
+    font-size: 2rem;
+    color: darkgreen;
+    font-family: 'Gill Sans', monospace;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 4px;
+}
+
+#footer{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
 }
