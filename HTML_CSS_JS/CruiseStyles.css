@@ -1,12 +1,67 @@
 div.cruises{
-    border: 5px;
+    border: 2px;
     border-radius: 5px;
     border-color: cornflowerblue;
     border-style: solid;
+    margin-top: 5px;
+}
+
+div.flex-row-container{
+    display: flex;
+    flex-direction: row;
+}
+
+details-id-string{
+    margin-bottom: 1em;
+    margin-top: 1em;
+    text-align: center;
+    font-family: 'Gill Sans', monospace;
+    font-size: 0.85rem;
+}
+
+.no-details-info{
+    font-family: 'Gill Sans', monospace;
+    font-size: 0.85rem;
+}
+
+p.cruise-name{
+    width: 60%;
+    overflow: hidden;
+    white-space: nowrap;
+    margin-left: 2px;
+}
+
+.add-border-between-sections{
+    border: 2px;
+    border-right-style: solid;
+    border-color: cornflowerblue;
+}
+
+div.cruises-separation{
+    border-bottom-style: solid;
+    border-width: 1px;
+    border-color: cornflowerblue;
+}
+
+div.info-separation{
+    border-bottom-style: solid;
+    border-width: 1px;
+    border-color: grey;
 }
  
 button.details-button{
     border: none;
     background: none;
     cursor: pointer;
+    margin-left: auto;
+    padding: 0px 0.5rem;
+}
+
+button.details-button:focus{
+    outline: none;
+}
+
+div.more-details{
+    display: none;
+    background-color: rgb(243, 243, 233);
 }
