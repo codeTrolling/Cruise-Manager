@@ -1,0 +1,12 @@
+div.cruises{
+    border: 5px;
+    border-radius: 5px;
+    border-color: cornflowerblue;
+    border-style: solid;
+}
+ 
+button.details-button{
+    border: none;
+    background: none;
+    cursor: pointer;
+}

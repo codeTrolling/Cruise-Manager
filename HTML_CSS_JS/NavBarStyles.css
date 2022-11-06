@@ -1,0 +1,65 @@
+h1.welcome{
+    background-color:cornflowerblue;
+    color: aliceblue;
+    font-family:'Gill Sans', Calibri;
+    margin-bottom: 10px;
+    text-align: center;
+}
+ 
+a.navigationButtons{
+    background-color: cornflowerblue;
+    color: aliceblue;
+    font-size: xx-large;
+    border-style: solid;
+    border-radius: 5px;
+    border-color: cornflowerblue;
+    text-decoration: none;
+    margin-left: 10px;
+    height: 40px;
+    width: 25%;
+    font-family:'Lucida Grande', sans-serif;
+    text-align: center;
+}
+ 
+@media only screen and (max-width:700px){
+    a.navigationButtons{
+        background-color: cornflowerblue;
+        color: aliceblue;
+        font-size: xx-large;
+        border-style: solid;
+        border-radius: 5px;
+        border-color: cornflowerblue;
+        text-decoration: none;
+        margin-left: 10px;
+        height: 40px;
+        width: 95%;
+        font-family:'Lucida Grande', sans-serif;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+}
+
+@media only screen and (min-width: 701px){
+    a.home-button{
+        margin-left: 0px;
+    }
+}
+
+div.flex-container{
+    display: flex;
+    flex-direction: row;
+}
+
+@media only screen and (max-width:700px){
+    div.flex-container{
+        display: flex;
+        flex-direction: column;
+    }   
+}
+ 
+div.nav-bar{
+    background-color: darkgreen;
+    padding: 5px;
+}
+
+ 
