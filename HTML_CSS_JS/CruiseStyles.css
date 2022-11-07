@@ -17,6 +17,7 @@ details-id-string{
     text-align: center;
     font-family: 'Gill Sans', monospace;
     font-size: 0.85rem;
+    min-width: 60px;
 }
 
 .no-details-info{
@@ -54,6 +55,7 @@ button.details-button{
     background: none;
     cursor: pointer;
     margin-left: auto;
+    margin-right: auto;
     padding: 0px 0.5rem;
 }
 

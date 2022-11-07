@@ -62,4 +62,6 @@ div.nav-bar{
     padding: 5px;
 }
 
- 
+ body{
+    background-color: rgb(255, 248, 240);
+ }
