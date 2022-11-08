@@ -1,0 +1,24 @@
+form.personal-data{
+    display: flex;
+    flex-direction: column;
+}
+ 
+.text-styling{
+    font-family: 'Gill Sans', monospace;
+    font-size: 1rem;
+}
+ 
+label.label-styling{
+    margin-left: 10px;
+}
+ 
+input.text-form{
+    height: 19px;
+    width: 40%;
+    outline: none;
+    border-style: solid;
+    border-radius: 20px;
+    border-width: 2px;
+    border-color: cornflowerblue;
+    text-indent: 10px;
+}
