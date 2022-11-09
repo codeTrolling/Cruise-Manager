@@ -16,13 +16,22 @@ details-id-string{
     margin-top: 1em;
     text-align: center;
     font-family: 'Gill Sans', monospace;
-    font-size: 0.85rem;
+    font-size: 1rem;
     min-width: 60px;
 }
 
 .no-details-info{
     font-family: 'Gill Sans', monospace;
-    font-size: 0.85rem;
+    font-size: 1rem;
+}
+
+@media only screen and (max-width: 700px){
+    .no-details-info{
+        font-size: 0.80rem;
+    }
+    details-id-string{
+        font-size: 0.80rem;
+    }
 }
 
 p.cruise-name{

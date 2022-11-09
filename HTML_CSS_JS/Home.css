@@ -27,12 +27,11 @@ p.about-us{
     display: flex;
     flex-direction: column;
     width: 100%;
-    position: fixed;
     bottom: 0;
     margin-bottom: 10px;
 }
 @media only screen and (max-width: 700px){
-    #footer{
-        position: static;
+    p.info{
+        font-size: 1rem;
     }
 }
