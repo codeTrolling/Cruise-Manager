@@ -14,11 +14,58 @@ label.label-styling{
  
 input.text-form{
     height: 19px;
-    width: 40%;
+    width: 320px;
     outline: none;
+    color: white;
+    background-color: cornflowerblue;
     border-style: solid;
     border-radius: 20px;
     border-width: 2px;
-    border-color: cornflowerblue;
+    border-color: rgb(0, 110, 255);
     text-indent: 10px;
+    margin-bottom: 10px;
+    padding: 0px;
+}
+
+input.text-form:last-child{
+    margin-bottom: 0px;
+}
+ 
+.bonus-info{
+    font-family: 'Gill Sans', monospace;
+    font-size: 0.85rem;
+    margin-top: 2px;
+    font-style: italic;
+    color: grey;
+}
+ 
+ticket-string{
+    display: block;
+    height: 19px;
+    width: 320px;
+    font-family: 'Gill Sans', monospace;
+    font-size: 1rem;
+    border-style: solid;
+    border-radius: 20px;
+    border-width: 2px;
+    border-color: rgb(0, 110, 255);
+    text-indent: 10px;
+    color: white;
+    background-color: cornflowerblue;
+}
+
+div.flex-row-container{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+}
+
+.triangle-img{
+    width: 0;
+	height: 4px;
+	border-left: 7px solid transparent;
+	border-right: 7px solid transparent;
+	border-bottom: 14px solid white;
+    position: absolute;
+    margin-left: 300px;
 }
