@@ -1,10 +1,13 @@
 img.center-picture{
     margin-top: 5px;
     aspect-ratio: 16/9;
-    max-height: 400px;
+    max-height: 430px;
     position: relative;
     transform: translateX(-50%);
     left: 50%;
+    width: 55%;
+    min-width: 400px;
+    max-width: 700px;
 }
 
 p.info{
