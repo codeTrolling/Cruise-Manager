@@ -13,7 +13,7 @@ label.label-styling{
 }
  
 input.text-form{
-    height: 19px;
+    height: 24px;
     width: 320px;
     outline: none;
     color: white;
@@ -25,6 +25,7 @@ input.text-form{
     text-indent: 10px;
     margin-bottom: 10px;
     padding: 0px;
+    letter-spacing: 0.7px;
 }
 
 input.text-form:last-child{
@@ -41,7 +42,7 @@ input.text-form:last-child{
  
 ticket-string{
     display: block;
-    height: 19px;
+    height: 24px;
     width: 320px;
     font-family: 'Gill Sans', monospace;
     font-size: 1rem;
@@ -52,6 +53,9 @@ ticket-string{
     text-indent: 10px;
     color: white;
     background-color: cornflowerblue;
+    letter-spacing: 0.7px;
+    user-select: none;
+    line-height: 1.6;
 }
 
 div.flex-row-container{
@@ -72,7 +76,7 @@ div.flex-row-container{
 }
 
 .type-options{
-    height: 19px;
+    height: 24px;
     width: 320px;
     font-family: 'Gill Sans', monospace;
     font-size: 1rem;
@@ -86,10 +90,13 @@ div.flex-row-container{
     color: white;
     background-color: rgb(0, 170, 255);
     margin: 0px;
+    letter-spacing: 0.7px;
+    user-select: none;
+    line-height: 1.6;
 }
 
 .type-options:last-child{
-    border-radius: 0px 0px 11px 11px;
+    border-radius: 0px 0px 14px 14px;
     border-bottom: 2px solid rgb(0, 110, 255);
 }
 

@@ -10,7 +10,7 @@ type.addEventListener("click", () => {
     if(document.getElementById("options").style.display == "block")
     {
         type.style.borderBottomWidth = "1px";
-        type.style.borderRadius = "11px 11px 0px 0px";
+        type.style.borderRadius = "14px 14px 0px 0px";
     }
     else{
         type.removeAttribute("style");
