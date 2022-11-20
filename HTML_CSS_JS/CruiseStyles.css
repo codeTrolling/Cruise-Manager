@@ -85,3 +85,7 @@ div.more-details{
     outline: 5px solid white;
     outline-offset: -5px;*/
 }
+
+.details-container{
+    margin-bottom: 10px;
+}
