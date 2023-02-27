@@ -17,8 +17,8 @@ details-id-string{
     text-align: center;
     font-family: 'Gill Sans', monospace;
     font-size: 1rem;
-    min-width: 15%;
-    width: 15%;
+    min-width: 20%;
+    width: 20%;
 }
 
 .no-details-info{
@@ -73,10 +73,25 @@ button.details-button:focus{
     outline: none;
 }
 
-div.more-details{
+.more-details{
     display: none;
-    background-color: rgb(243, 243, 233);
-    position: relative;
+    /*background-color: rgb(243, 243, 233);*/
+    position: absolute;
+    padding: 5px;
+    top: 25%;
+    right: 25%;
+    left: 25%;
+    width: 70%;
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    border: 4px rgb(0, 170, 255) solid;
+}
+
+@media only screen and (max-width: 700px){
+    .more-details{
+        right: 10%;
+        left: 10%;
+    }
 }
 
 .cruises :not(:first-child) .details-button:hover{
@@ -88,4 +103,10 @@ div.more-details{
 
 .details-container{
     margin-bottom: 10px;
+    /* transition: all 0.5s linear; */
 }
+
+/* .more-details{
+    position: absolute;
+    backdrop-filter: blur(10px);
+} */
