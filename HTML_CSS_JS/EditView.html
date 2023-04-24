@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit cruises</title>
+    <link rel="stylesheet" href="NavBarStyles.css">
+    <link rel="stylesheet" href="EditStyles.css">
+    <script defer src="EditScript.js"></script>
+    <script defer src="SignOutScript.js"></script>
+    <script src="EditScriptRedirect.js"></script>
+</head>
+<body style="margin: 0;">
+    <h1 class="welcome">Welcome to the sea cruise manager!</h1>
+        <div class="flex-container nav-bar">
+            <a href="HomeView.html" class="navigationButtons home-button">Home</a>
+            <a href="UsersView.html" class="navigationButtons">Users</a>
+            <a href="CruiseView.html" class="navigationButtons">Cruises</a>
+            <a href="ReservationView.html" class="navigationButtons">Reservations</a>
+        </div>
+
+        <div class="method-btns-container">
+            <div class="text-styling method-btn" id="add-method-btn">Add</div>
+            <div class="text-styling method-btn" id="edit-method-btn">Edit</div>
+            <div class="text-styling method-btn" id="delete-method-btn">Delete</div>
+        </div>
+
+        <div id="form-container">
+            <div id="form-slider">
+                <!-- Add a cruise -->
+                <label for="name" class="text-styling">Cruise name</label>
+                <input type="text" name="name" id="name" class="text-styling text-form">
+                <label for="set-off-location" class="text-styling">Set off location</label>
+                <input type="text" name="set-off-location" id="set-off-location" class="text-styling text-form">
+                <label for="arrive-location" class="text-styling">Arrive location</label>
+                <input type="text" name="arrive-location" id="arrive-location" class="text-styling text-form">
+                <label for="set-off-time" class="text-styling">Set off time</label>
+                <input type="text" name="set-off-time" id="set-off-time" class="text-styling text-form">
+                <label for="arrive-time" class="text-styling">Arrive time</label>
+                <input type="text" name="arrive-time" id="arrive-time" class="text-styling text-form">
+                <label for="captain-name" class="text-styling">Captain name</label>
+                <input type="text" name="captain-name" id="captain-name" class="text-styling text-form">
+                <label for="normal-class-tickets" class="text-styling">Number of normal class tickets</label>
+                <input type="text" name="normal-class-tickets" id="normal-class-tickets" class="text-styling text-form">
+                <label for="business-class-tickets" class="text-styling">Number of business class tickets</label>
+                <input type="text" name="business-class-tickets" id="business-class-tickets" class="text-styling text-form">
+                <label for="normal-class-price" class="text-styling">Price for normal class ticket</label>
+                <input type="text" name="normal-class-price" id="normal-class-price" class="text-styling text-form">
+                <label for="business-class-price" class="text-styling">Price for business class ticket</label>
+                <input type="text" name="business-class-price" id="business-class-price" class="text-styling text-form">
+                <button class="submit-btn text-styling" id="add-submit-btn">Submit</button>
+    
+                <!-- Edit a cruise -->
+                <label for="cruise-id" class="text-styling">Id of cruise to change</label>
+                <input type="text" name="cruise-id" id="cruise-id" class="text-styling text-form">
+                <label for="ename" class="text-styling">Cruise name</label>
+                <input type="text" name="ename" id="ename" class="text-styling text-form">
+                <label for="eset-off-location" class="text-styling">Set off location</label>
+                <input type="text" name="eset-off-location" id="eset-off-location" class="text-styling text-form">
+                <label for="earrive-location" class="text-styling">Arrive location</label>
+                <input type="text" name="earrive-location" id="earrive-location" class="text-styling text-form">
+                <label for="eset-off-time" class="text-styling">Set off time</label>
+                <input type="text" name="eset-off-time" id="eset-off-time" class="text-styling text-form">
+                <label for="earrive-time" class="text-styling">Arrive time</label>
+                <input type="text" name="earrive-time" id="earrive-time" class="text-styling text-form">
+                <label for="ecaptain-name" class="text-styling">Captain name</label>
+                <input type="text" name="ecaptain-name" id="ecaptain-name" class="text-styling text-form">
+                <label for="enormal-class-tickets" class="text-styling">Number of normal class tickets</label>
+                <input type="text" name="enormal-class-tickets" id="enormal-class-tickets" class="text-styling text-form">
+                <label for="ebusiness-class-tickets" class="text-styling">Number of business class tickets</label>
+                <input type="text" name="ebusiness-class-tickets" id="ebusiness-class-tickets" class="text-styling text-form">
+                <label for="enormal-class-price" class="text-styling">Price for normal class ticket</label>
+                <input type="text" name="enormal-class-price" id="enormal-class-price" class="text-styling text-form">
+                <label for="ebusiness-class-price" class="text-styling">Price for business class ticket</label>
+                <input type="text" name="ebusiness-class-price" id="ebusiness-class-price" class="text-styling text-form">
+                <button class="submit-btn text-styling" id="edit-submit-btn">Submit</button>
+
+                <!-- Delete a cruise -->
+                <label for="delete-cruise-id" class="text-styling">Id of cruise to delete</label>
+                <input type="text" name="delete-cruise-id" id="delete-cruise-id" class="text-styling text-form">
+                <button class="submit-btn text-styling" id="delete-submit-btn">Submit</button>
+            </div>
+        </div>
+        <div id="sign-out" class="text-styling">Sign out</div>
+</body>
+</html>

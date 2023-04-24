@@ -9,8 +9,8 @@
     <link rel="stylesheet" href="NavBarStyles.css">
 
 </head>
-<body>
-    <img src="../images/The_better_ship.jpg" alt="" id="background-img">
+<body style="margin: 0;">
+    <img src="images/The_better_ship.jpg" alt="" id="background-img">
     <h1 class="welcome">Users</h1>
     <div class="flex-container nav-bar">
         <a href="HomeView.html" class="navigationButtons home-button">Home</a>
@@ -27,18 +27,19 @@
  
         <div id="input-borders">
             <div class="input-container">
-                <form action="" class="user-info" id="form">
+                <form action="" class="user-info" id="form" onsubmit="return false">
                     <label for="iuname" class="text-styling">Username:</label>
                     <input type="text" name="iuname" id="iuname" class="text-form text-styling">
                     <label for="ipass" class="text-styling">Password:</label>
-                    <input type="text" name="ipass" id="ipass" class="text-form text-styling">
+                    <input type="password" name="ipass" id="ipass" class="text-form text-styling">
+                    <button id="isubmit-btn" class="submit-btn text-styling">Submit</button>
                 </form>
 
                 <form action="" class="user-info" id="sign-up-form">
                     <label for="uuname" class="text-styling">Username:</label>
                     <input type="text" name="uuname" id="uuname" class="text-form text-styling">
                     <label for="upass" class="text-styling">Password:</label>
-                    <input type="text" name="upass" id="upass" class="text-form text-styling">
+                    <input type="password" name="upass" id="upass" class="text-form text-styling">
                     <label for="uemail" class="text-styling">Email:</label>
                     <input type="text" name="uemail" id="uemail" class="text-form text-styling">
                     <label for="ufname" class="text-styling">First name:</label>
@@ -51,6 +52,7 @@
                     <input type="text" name="uphone" id="uphone" class="text-form text-styling">
                     <label for="uadress" class="text-styling">Adress:</label>
                     <input type="text" name="uadress" id="uadress" class="text-form text-styling">
+                    <button id="usubmit-btn" class="submit-btn text-styling">Submit</button>
                 </form>
             </div>
             <p id="reset-pass" class="text-styling">Reset password</p>

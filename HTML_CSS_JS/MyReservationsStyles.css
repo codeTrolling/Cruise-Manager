@@ -1,0 +1,18 @@
+.cancel-btn{
+    border: 2px solid rgb(0, 110, 255);
+    border-radius: 15px;
+    background-color: cornflowerblue;
+    margin-top: 5px;
+    cursor: pointer;
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+    font-family: 'Gill Sans', monospace;
+    font-size: 1rem;
+    width: 200px;
+    height: 20px;
+    text-align: center;
+}
+.cancel-btn:hover{
+    background-color: rgb(0, 170, 255);
+}

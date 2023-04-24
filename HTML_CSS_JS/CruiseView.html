@@ -7,8 +7,9 @@
     <title>Cruises</title>
     <link rel="stylesheet" href="NavBarStyles.css">
     <link rel="stylesheet" href="CruiseStyles.css">
+    <script defer src="SignOutScript.js"></script>
 </head>
-<body style="margin-bottom: 5px;">
+<body style="margin: 0;">
     <h1 class="welcome">Welcome to the cruises tab</h1>
     <div class="flex-container nav-bar">
         <a href="HomeView.html" class="navigationButtons home-button">Home</a>
@@ -16,9 +17,21 @@
         <a href="CruiseView.html" class="navigationButtons">Cruises</a>
         <a href="ReservationView.html" class="navigationButtons">Reservations</a>
     </div>
+    <div id="modal-background"></div>
 
+    <div class="chosen-filter-and-filter-search-container">
+        <div id="chosen-filter">Filters</div>
+        <input type="text" name="filter-search" id="filter-search" placeholder="Search">
+    </div>
+    <div id="filters-container" style="display: none;">
+        <div class="filters">ID</div>
+        <div class="filters">CompanyName</div>
+        <div class="filters">Price</div>
+        <div class="filters">ArriveLocation</div>
+        <div class="filters">CaptianName</div>
+    </div>
 
-    <div class="cruises">
+    <div id="cruises">
         <div class="flex-row-container cruises-separation" style="border-width: 2px;">
             <details-id-string class="add-border-between-sections">ID</details-id-string>
             <p class="no-details-info cruise-name add-border-between-sections">Company Name</p>
@@ -27,7 +40,7 @@
             <button class="details-button no-details-info" style="cursor: default;">Details</button>
         </div>
 
-        <div class="details-container">
+        <!-- <div class="details-container">
             <div class="flex-row-container cruises-separation">
                 <details-id-string class="add-border-between-sections">example ID</details-id-string>
                 <p class="no-details-info cruise-name add-border-between-sections">example cruise name</p>
@@ -35,7 +48,40 @@
                 <button id="show-details" class="details-button no-details-info">Details</button>
             </div>
             <div id="details1" class="more-details">
-                <div></div>
+                <div class="flex-row-container info-separation">
+                    <details-id-string class="add-border-between-sections more-details-text">From</details-id-string>
+                    <p class="no-details-info more-details-text" style="margin-left: 2px;">location from</p>
+                </div>
+                <div class="flex-row-container info-separation">
+                    <details-id-string class="add-border-between-sections more-details-text">To</details-id-string>
+                    <p class="no-details-info more-details-text" style="margin-left: 2px;">location to</p>
+                </div>
+                <div class="flex-row-container info-separation">
+                    <details-id-string class="add-border-between-sections more-details-text">Set off time</details-id-string>
+                    <p class="no-details-info more-details-text" style="margin-left: 2px;">Random Time</p>
+                </div>
+                <div class="flex-row-container info-separation">
+                    <details-id-string class="add-border-between-sections more-details-text">Time of arrival</details-id-string>
+                    <p class="no-details-info more-details-text" style="margin-left: 2px;">Random Time</p>
+                </div>
+                <div class="flex-row-container info-separation">
+                    <details-id-string class="add-border-between-sections more-details-text">Captain name</details-id-string>
+                    <p class="no-details-info more-details-text" style="margin-left: 2px;">Capitan Albania</p>
+                </div>
+                <div class="flex-row-container info-separation">
+                    <details-id-string class="add-border-between-sections more-details-text">Normal class</details-id-string>
+                    <p class="no-details-info more-details-text" style="margin-left: 2px;">Remaining tickets: number</p>
+                </div>
+                <div class="flex-row-container info-separation">
+                    <details-id-string class="add-border-between-sections more-details-text">Business class</details-id-string>
+                    <p class="no-details-info more-details-text" style="margin-left: 2px;">Remaining tickets: number</p>
+                </div>
+                <div class="flex-row-container">
+                    <details-id-string class="add-border-between-sections more-details-text">Type</details-id-string>
+                    <p class="no-details-info more-details-text" style="margin-left: 2px;">Some type idk what this is</p>
+                </div>
+            </div>
+             <div id="details1" class="more-details">
                 <div class="flex-row-container info-separation">
                     <details-id-string class="add-border-between-sections">From</details-id-string>
                     <p class="no-details-info" style="margin-left: 2px;">location from</p>
@@ -69,43 +115,10 @@
                     <p class="no-details-info" style="margin-left: 2px;">Some type idk what this is</p>
                 </div>
             </div>
-            <!-- <div id="details1" class="more-details">
-                <div class="flex-row-container info-separation">
-                    <details-id-string class="add-border-between-sections">From</details-id-string>
-                    <p class="no-details-info" style="margin-left: 2px;">location from</p>
-                </div>
-                <div class="flex-row-container info-separation">
-                    <details-id-string class="add-border-between-sections">To</details-id-string>
-                    <p class="no-details-info" style="margin-left: 2px;">location to</p>
-                </div>
-                <div class="flex-row-container info-separation">
-                    <details-id-string class="add-border-between-sections">Set off time</details-id-string>
-                    <p class="no-details-info" style="margin-left: 2px;">Random Time</p>
-                </div>
-                <div class="flex-row-container info-separation">
-                    <details-id-string class="add-border-between-sections">Time of arrival</details-id-string>
-                    <p class="no-details-info" style="margin-left: 2px;">Random Time</p>
-                </div>
-                <div class="flex-row-container info-separation">
-                    <details-id-string class="add-border-between-sections">Captain name</details-id-string>
-                    <p class="no-details-info" style="margin-left: 2px;">Capitan Albania</p>
-                </div>
-                <div class="flex-row-container info-separation">
-                    <details-id-string class="add-border-between-sections">Normal class</details-id-string>
-                    <p class="no-details-info" style="margin-left: 2px;">Remaining tickets: number</p>
-                </div>
-                <div class="flex-row-container info-separation">
-                    <details-id-string class="add-border-between-sections">Business class</details-id-string>
-                    <p class="no-details-info" style="margin-left: 2px;">Remaining tickets: number</p>
-                </div>
-                <div class="flex-row-container">
-                    <details-id-string class="add-border-between-sections">Type</details-id-string>
-                    <p class="no-details-info" style="margin-left: 2px;">Some type idk what this is</p>
-                </div>
-            </div> -->
-        </div>
+        </div> -->
 
     </div>
+    <div id="sign-out" class="text-styling">Sign out</div>
     <script src="CruisesScript.js"></script>
 </body>
 </html>

@@ -1,4 +1,4 @@
-div.cruises{
+#cruises{
     border: 2px;
     border-radius: 5px;
     border-color: cornflowerblue;
@@ -81,10 +81,10 @@ button.details-button:focus{
     top: 25%;
     right: 25%;
     left: 25%;
-    width: 70%;
     backdrop-filter: blur(10px);
     border-radius: 20px;
     border: 4px rgb(0, 170, 255) solid;
+    z-index: 2;
 }
 
 @media only screen and (max-width: 700px){
@@ -110,3 +110,82 @@ button.details-button:focus{
     position: absolute;
     backdrop-filter: blur(10px);
 } */
+
+#modal-background{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(36, 36, 36);
+    /* display: none; */
+    position: absolute;
+    transition: 0.3s;
+    opacity: 0;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    pointer-events: none;
+    user-select: none;
+}
+
+.more-details-text{
+    color: white;
+    /*text-shadow: 0px 0px 4px black;*/
+    text-shadow: 1px 1px 1.5px black, 1px 0px 1.5px black, -1px 0px 1.5px black, -1px -1px 1.5px black;
+}
+
+.active-details-button:hover{
+    text-shadow: 2px 2px 2px rgba(100, 149, 237, 0.6)
+}
+
+.chosen-filter-and-filter-search-container{
+    display: flex;
+    margin-top: 15px;
+}
+
+#filters-container{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.filters{
+    color: rgb(70, 70, 70);
+    cursor: pointer;
+}
+
+#filter-search{
+    height: 24px;
+    min-height: 24px;
+    width: 320px;
+    outline: none;
+    color: white;
+    background-color: cornflowerblue;
+    border-style: solid;
+    border-radius: 20px;
+    border-width: 2px;
+    border-color: rgb(0, 110, 255);
+    text-indent: 10px;
+    margin-bottom: 10px;
+    padding: 0px;
+    letter-spacing: 0.7px;
+    font-family: 'Gill Sans', monospace;
+    font-size: 1rem;
+}
+
+#chosen-filter{
+    border: 2px solid rgb(0, 110, 255);
+    border-radius: 15px;
+    background-color: cornflowerblue;
+    margin-top: 5px;
+    cursor: pointer;
+    margin-right: 20px;
+    margin-left: 4px;
+    color: white;
+    font-family: 'Gill Sans', monospace;
+    font-size: 1rem;
+    height: 20px;
+    text-align: center;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.chosen-filter:hover{
+    background-color: rgb(0, 170, 255);
+}

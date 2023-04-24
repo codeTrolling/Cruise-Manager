@@ -56,6 +56,8 @@ ticket-string{
     letter-spacing: 0.7px;
     user-select: none;
     line-height: 1.6;
+    cursor: pointer;
+    transition: 0.2s;
 }
 
 div.flex-row-container{
@@ -93,6 +95,7 @@ div.flex-row-container{
     letter-spacing: 0.7px;
     user-select: none;
     line-height: 1.6;
+    cursor: pointer;
 }
 
 .type-options:last-child{
@@ -102,5 +105,34 @@ div.flex-row-container{
 
 #options{
     position: absolute;
-    display: none;
+    /* display: none; */
+    opacity: 0;
+    user-select: none;
+    pointer-events: none;
+    transition: 0.2s;
+    transform: translateY(-20px);
+}
+
+#price{
+    user-select: none;
+    pointer-events: none;
+}
+
+#submit-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 20px;
+    width: 200px;
+    border: 2px solid rgb(0, 110, 255);
+    border-radius: 15px;
+    background-color: cornflowerblue;
+    color: white;
+    margin: 10px auto 0 auto;
+    cursor: pointer;
+    user-select: none;
+}
+
+#submit-btn:hover{
+    background-color: rgb(0, 170, 255);
 }

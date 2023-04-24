@@ -7,8 +7,9 @@
     <title>Reservations</title>
     <link rel="stylesheet" href="NavBarStyles.css">
     <link rel="stylesheet" href="ReservationStyles.css">
+    <script defer src="SignOutScript.js"></script>
 </head>
-<body>
+<body style="margin: 0;">
     <h1 class="welcome">Reservation</h1>
     <div class="flex-container nav-bar">
         <a href="HomeView.html" class="navigationButtons home-button">Home</a>
@@ -18,33 +19,42 @@
     </div>
  
     <div style="margin: 50px auto 0px; width: 320px;">
-        <form action="" class="personal-data">
+        <form action="" class="personal-data" onsubmit="return false">
             <label for="fname" class="text-styling">First name:</label>
             <input type="text" name="fname" id="fname" class="text-form text-styling">
-            <label for="mname" class="text-styling">Middle name:</label>
-            <input type="text" name="mname" id="mname" class="text-form text-styling">
             <label for="lname" class="text-styling">Last name:</label>
             <input type="text" name="lname" id="lname" class="text-form text-styling">
+            <label for="email" class="text-styling">Email</label>
+            <input type="text" name="email" id="email" class="text-form text-styling">
             <label for="phone" class="text-styling">Telephone number:</label>
             <input type="text" name="phone" id="phone" class="text-form text-styling">
             <label for="PIN" class="text-styling">PIN:</label>
             <input type="text" name="PIN" id="PIN" class="text-form text-styling">
+            <label for="nationality" class="text-styling">Nationality:</label>
+            <input type="text" name="nationality" id="nationality" class="text-form text-styling">
             <label for="cruise-id" class="text-styling">Cruise ID:</label>
             <input type="text" name="cruise-id" id="cruise-id" class="text-form text-styling">
         </form>
-        <bonus-info-string class="bonus-info">*To check cruise IDs as well as more info on available cruises: <a href="" class="bonus-info">cruises info</a></bonus-info-string>
+        <bonus-info-string class="bonus-info">*To check cruise IDs as well as more info on available cruises: <a href="CruiseView.html" class="bonus-info">cruises info</a></bonus-info-string>
         <p class="text-styling" style="margin-bottom: 0px;">Ticket Type:</p>
         <div class="flex-row-container">
             <div style="position: relative;">
                 <ticket-string id="ticket-type">Ticket type</ticket-string>
                 <div id="options">
-                    <p class="type-options">Business class</p>
-                    <p class="type-options">Passenger class</p>
+                    <p class="type-options" id="bc">Business class</p>
+                    <p class="type-options" id="nc">Normal class</p>
                 </div>
             </div>
-            <triangle-img class="triangle-img"></triangle-img>
+            <!-- <triangle-img class="triangle-img"></triangle-img> -->
         </div>
+        <div style="margin-top: 10px;">
+            <label for="price" class="text-styling">Price:</label>
+            <input type="text" name="price" id="price" class="text-form text-styling">
+        </div>
+
+        <div id="submit-btn" class="text-styling">Submit</div>
     </div>
+    <div id="sign-out" class="text-styling">Sign out</div>
     <script src="ReservationScript.js"></script>
 </body>
 </html>

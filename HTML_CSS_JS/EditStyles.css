@@ -1,0 +1,87 @@
+.text-styling{
+    font-family: 'Gill Sans', monospace;
+    font-size: 1rem;
+}
+
+.method-btns-container{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.method-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 27px;
+    width: 150px;
+    border: 2px solid rgb(0, 110, 255);
+    background-color: cornflowerblue;
+    border-radius: 15px;
+    color: white;
+    font-size: 1.3rem;
+    margin-top: 60px;
+    user-select: none;
+    cursor: pointer;
+}
+
+.method-btn:hover{
+    background-color: rgb(0, 170, 255);
+}
+
+#form-container{
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    width: 338px;
+    margin: 40px auto 0 auto;
+    border: 4px solid rgb(0, 110, 255);
+    border-radius: 20px;
+    overflow: hidden;
+    height: 600px;
+    align-items: center;
+    transition: all 0.3s linear;
+}
+
+#form-slider{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transform: translateY(0);
+    transition: 0.5s ease-in-out;
+}
+
+.text-form{
+    height: 24px;
+    min-height: 24px;
+    width: 320px;
+    outline: none;
+    color: white;
+    background-color: cornflowerblue;
+    border-style: solid;
+    border-radius: 20px;
+    border-width: 2px;
+    border-color: rgb(0, 110, 255);
+    text-indent: 10px;
+    margin-bottom: 10px;
+    padding: 0px;
+    letter-spacing: 0.7px;
+}
+
+.submit-btn{
+    border: 2px solid rgb(0, 110, 255);
+    color: white;
+    background-color: cornflowerblue;
+    border-radius: 15px;
+    width: 120px;
+    height: 24px;
+    cursor: pointer;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+}
+
+.submit-btn:hover{
+    background-color: rgb(0, 170, 255);
+}
+
+/* -1330px 660px*/

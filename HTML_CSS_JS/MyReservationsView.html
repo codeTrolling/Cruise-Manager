@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Reservations</title>
+    <link rel="stylesheet" href="NavBarStyles.css">
+    <link rel="stylesheet" href="CruiseStyles.css">
+    <link rel="stylesheet" href="MyReservationsStyles.css">
+    <script defer src="MyReservationsScript.js"></script>
+    <script defer src="SignOutScript.js"></script>
+</head>
+<body style="margin: 0;">
+    <h1 class="welcome">My Reservations</h1>
+        <div class="flex-container nav-bar">
+            <a href="HomeView.html" class="navigationButtons home-button">Home</a>
+            <a href="UsersView.html" class="navigationButtons">Users</a>
+            <a href="CruiseView.html" class="navigationButtons">Cruises</a>
+            <a href="ReservationView.html" class="navigationButtons">Reservations</a>
+        </div>
+
+        <div id="modal-background"></div>
+
+
+    <div id="cruises">
+        <div class="flex-row-container cruises-separation" style="border-width: 2px;">
+            <details-id-string class="add-border-between-sections">ID</details-id-string>
+            <p class="no-details-info cruise-name add-border-between-sections">Company Name</p>
+            <details-id-string class="add-border-between-sections" style="width: 20%;">Cancel reservation</details-id-string>
+            <!--<details-id-string style="padding: 0px 8px 0px 8px;">details</details-id-string>-->
+            <button class="details-button no-details-info" style="cursor: default;">Details</button>
+        </div>
+        <div id="sign-out" class="text-styling">Sign out</div>
+</body>
+</html>

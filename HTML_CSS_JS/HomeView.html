@@ -4,8 +4,10 @@
         <title>Sea Cruise</title>
         <link rel="stylesheet" href="NavBarStyles.css">
         <link rel="stylesheet" href="Home.css">
+        <script defer src="HomeScript.js"></script>
+        <script defer src="SignOutScript.js"></script>
     </head>
-    <body style="margin-bottom: 5px;">
+    <body style="margin: 0 0 5px 0;">
         <h1 class="welcome">Welcome to the sea cruise manager!</h1>
         <div class="flex-container nav-bar">
             <a href="HomeView.html" class="navigationButtons home-button">Home</a>
@@ -13,7 +15,13 @@
             <a href="CruiseView.html" class="navigationButtons">Cruises</a>
             <a href="ReservationView.html" class="navigationButtons">Reservations</a>
         </div>
-        <img src="..\images\The_better_ship.jpg" alt="" class="center-picture">
+        <div>
+            <img src="images/The_better_ship.jpg" alt="" id="center-picture">
+            <div class="img-selector" style="width: 15px; height: 15px; transform: translate(-32.5px, -55px);"></div>
+            <div class="img-selector"></div>
+            <div class="img-selector"></div>
+        </div>
+        <div id="easter-egg"></div>
         <p class="info">The Sea Cruise Manager is a system which gives you a reliable way to book sea cruise tickets. It also allows you to track cruise ships that have already set off.
             All cruises and details about them can be found <a href="" style="color: black;">here.</a>
         <br> <br>
@@ -23,11 +31,13 @@
         <div id="footer">
             <p class="about-us">ABOUT US:</p>
             <div class="flex-container" style="justify-content: space-around;">
-                <p class="info">Telephone number: 0881325634 <br>
+                <p class="info">Telephone number: 0881325634 <br> <br>
                 Our headquarters: ulitsa sushtestvuva fr fr no cap</p>
-                <p class="info">Owner of company: Tonkata <br>
+                <p class="info">Owner of company: Tonkata <br> <br>
                 Partners with: Capitan Albania</p>
             </div>         
         </div>
+
+        <div id="sign-out" class="text-styling">Sign out</div>
     </body>
 </html>

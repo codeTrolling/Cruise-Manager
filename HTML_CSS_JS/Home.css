@@ -1,6 +1,7 @@
-img.center-picture{
+#center-picture{
     margin-top: 5px;
     aspect-ratio: 16/9;
+    height: 430px;
     max-height: 430px;
     position: relative;
     transform: translateX(-50%);
@@ -8,6 +9,7 @@ img.center-picture{
     width: 55%;
     min-width: 400px;
     max-width: 700px;
+    user-select: none;
 }
 
 p.info{
@@ -40,4 +42,28 @@ p.about-us{
     p.about-us{
         font-size: 1.5rem;
     }
+}
+
+#easter-egg{
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    transform: translate(20px, -30px);
+}
+
+.img-selector{
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: white;
+    box-shadow: 1px 1px 1px 1px black, 1px 0px 1px 1px black, -1px 0px 1px 1px black, -1px -1px 1px 1px black, 0px 1px 1px 1px black, 0px -1px 1px 1px black;
+    border-radius: 50%;
+    left: 50%;
+    transform: translate(-50%, -50px);
+    cursor: pointer;
+    transition: 0.15s linear/*, width 0.15s linear*/;
+}
+
+.img-selector:hover{
+    background-color: grey;
 }
